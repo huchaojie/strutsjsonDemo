@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 1配置自定义文件类myRequestParser，继承MultiPartRequest重写 -->
+	<bean type="org.apache.struts2.dispatcher.multipart.MultiPartRequest"
+		name="myRequestParser" class="com.vrv.ieas.action.MyJakartaMultiPartRequest"
+		scope="default" optional="true" />
+	<constant name="struts.multipart.handler" value="myRequestParser" />
+	<!-- 2文件上传:大小 限制(默认2M,这里限制为100M) -->
+	<constant name="struts.multipart.maxSize" value="104857600" />
+	<!-- JSON DEMO -->
+	<package name="json" namespace="/ajaxupload" extends="json-default">
+		<action name="upload_*" class="com.vrv.ieas.action.FileOperatorAction"
+			method="{1}">
+			<result type="json"></result>
+		</action>
+	</package>
+
+	<!--struts2 公共配置 -->
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.action.extension" value=",do" />
+	<constant name="struts.multipart.saveDir" value="javax.servlet.context.tempdir" />
+
+</struts>

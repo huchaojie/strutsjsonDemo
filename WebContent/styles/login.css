@@ -1,0 +1,34 @@
+/*  css document  */
+body { text-align: left; font-family:Arial; margin:0; padding:0; font-size:12px; color:#333333; background:url(login/body_bg.jpg) top center #E1E9EC no-repeat; }
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p { padding:0; margin:0; }
+img { vertical-align:top; border:0; }
+img, input, select, button { vertical-align:middle; }
+/*  link  */
+a:link { color: #333; text-decoration:none; }
+a:visited { color: #333; text-decoration:none; }
+a:hover { color: #bc2931; text-decoration:underline; }
+a:active { color: #bc2931; }
+/*  public  */
+.highlight, .highlight:visited, .highlight a, .highlight a:visited { color:#f00; }
+.hidden { display: none; }
+.clear { clear: both; font-size:1px; width:1px; height:0; visibility: hidden; }
+/*  */
+#container {  }
+#herder{ margin:0 auto; width:990px; height:190px; background:url(login/logo.png)  center  bottom no-repeat;}
+#herder .logo{ float:left; display:inline;}
+#herder .subnav{ float:right; display:inline; margin-top:110px; margin-right:60px; color:#999;}
+#herder .subnav a{ color:#999;}
+#herder .separator{ margin:0 5px;}
+#main{  margin:0 auto; width:990px; }
+#main .loginbox { padding-top:40px; height:210px; padding-left:330px;background:url(login/loginbox_bg.png) center 20px no-repeat; }
+#main .loginbox dl { clear:left; margin-top:15px; }
+#main .loginbox dt { float: left; width: 60px; text-align:right; font-size:14px; font-weight:bold; padding-top:5px; color:#333; }
+#main .loginbox dd { margin-left:65px;  }
+#main .loginbox .textbox { width:240px; height:25px; line-height:25px; border: 2px solid #8ED1EB; }
+#main .loginbox .textbox:hover  { width:240px; height:25px; line-height:25px; border: 2px solid #3B90C9; }
+#main .loginbox .codebox { width:120px; height:25px; line-height:25px; border: 2px solid #8ED1EB;}
+#main .loginbox .codebox:hover  { border: 2px solid #3B90C9;}
+#main .loginbox .codeimg img { height:25px; width:80px; }
+#main .loginbox .login_button { border:0px; background:url(login/login_button.gif) 0px 0px no-repeat; height:35px; line-height:35px; width:100px; text-align:center; color:#FFF; font-weight:bold; }
+#footer {  margin:0 auto; width:990px; }
+#footer .copyright{  margin:0 auto; text-align:center; color:#2C555B; padding:10px 0; line-height:180%; }
